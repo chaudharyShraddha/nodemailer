@@ -70,13 +70,13 @@ function mail(data){
 let mailTransport = nodemailer.createTransport({
     service: "gmail",
     auth:{
-        user:"shraddha9577@gmail.com",
-        pass:"calculas2610"
+        user:"userEmail",
+        pass:"password"
     }
 });
 
 let sendMail = {
-    from: "shraddha9577@gmail.com",
+    from: "userEmail",
     to: `${data.email}`,
     subject: "Registration Confirmation!!",
     text:  "hello",
